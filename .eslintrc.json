@@ -6,18 +6,15 @@
     "node": true
   },
   "parserOptions": {
+    "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": false
     },
     "sourceType": "module"
   },
-  "rules": {
-    "no-const-assign": "error",
-    "no-this-before-super": "error",
-    "no-undef": "error",
-    "no-unreachable": "error",
-    "no-unused-vars": "error",
-    "constructor-super": "error",
-    "valid-typeof": "warn"
-  }
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:angular/bestpractices"
+  ]
 }
