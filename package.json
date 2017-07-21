@@ -1,7 +1,7 @@
 {
-  "name": "angular-webpack-workflow",
-  "version": "1.1.0",
-  "description": "A workflow for Angular made with Webpack",
+  "name": "angularjs-seed",
+  "version": "1.0.0",
+  "description": "Seed para criação de projetos com AngularJS, usando ES2015",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/preboot/angularjs-webpack.git"
+    "url": "https://github.com/vectoritcgroup/angularjs-seed.git"
   },
-  "author": "Jesus Rodriguez",
+  "author": "Vector ITC Group",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/preboot/angularjs-webpack/issues"
+    "url": "https://github.com/vectoritcgroup/angularjs-seed/issues"
   },
-  "homepage": "https://github.com/preboot/angularjs-webpack",
+  "homepage": "https://github.com/vectoritcgroup/angularjs-seed",
   "dependencies": {
     "angular": "^1.6.5",
     "eslint": "^4.2.0"
@@ -53,6 +53,6 @@
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
     "webpack": "2.2.0",
-    "webpack-dev-server": "2.2.0"
+    "webpack-dev-server": "^2.4.5"
   }
 }
