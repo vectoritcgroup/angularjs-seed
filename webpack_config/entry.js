@@ -2,5 +2,9 @@ import { env } from './env';
 import { paths } from '../paths';
 
 export const entry = env.isTest === true ? undefined : {
-  app: paths.app,
+  // app: paths.app,
+  bundle: [
+    'bootstrap-loader',
+    paths.app,
+  ],
 };
