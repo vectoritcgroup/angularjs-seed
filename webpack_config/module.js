@@ -1,6 +1,7 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 import { env } from './env';
+import { paths } from '../paths';
 
 const scripts = {
   test: /\.js$/,
@@ -20,11 +21,23 @@ const styles = {
   }),
 };
 
+const index = {
+  include: /index.html$/,
+  use: 'html-loader',
+};
+
 const markup = {
   test: /\.html$/,
+  exclude: [
+    /index.html$/,
+  ],
   use: [
-    // { loader: 'ngtemplate-loader', query: { requireAngular: true } },
-    'html-loader',
+    {
+      loader: 'ngtemplate-loader',
+    },
+    {
+      loader: 'html-loader',
+    },
   ],
 };
 
@@ -35,6 +48,7 @@ const assets = {
 
 const rules = [
   scripts,
+  index,
   markup,
   styles,
   assets,
