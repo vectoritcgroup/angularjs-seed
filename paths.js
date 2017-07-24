@@ -5,5 +5,5 @@ export const paths = {
   src,
   dist: `${root}/dist`,
   public: `${src}/public`,
-  app: `${src}/app/app.js`,
+  app: `${src}/app/app.module.js`,
 };

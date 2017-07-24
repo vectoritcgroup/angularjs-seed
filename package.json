@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/vectoritcgroup/angularjs-seed",
   "dependencies": {
-    "webpack": "2.2.0",
+    "@uirouter/angularjs": "^1.0.5",
     "angular": "^1.6.5",
     "copy-webpack-plugin": "4.0.1",
-    "html-webpack-plugin": "^2.7.1",
-    "extract-text-webpack-plugin": "2.0.0-beta.5"
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
+    "html-webpack-plugin": "^2.7.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
@@ -60,7 +60,7 @@
     "rimraf": "^2.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.13.0",
-    "webpack": "2.2.0",
+    "webpack": "^2.7.0",
     "webpack-dev-server": "^2.4.5"
   }
 }
