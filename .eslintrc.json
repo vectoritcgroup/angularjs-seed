@@ -16,5 +16,8 @@
     "eslint:recommended",
     "airbnb-base",
     "plugin:angular/bestpractices"
-  ]
+  ],
+  "rules": {
+    "import/prefer-default-export": "off"
+  }
 }
