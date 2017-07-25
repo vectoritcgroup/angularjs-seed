@@ -3,9 +3,11 @@ import angularjsLogo from './assets/angularjs_logo.png';
 
 export const NavbarComponent = {
   templateUrl,
+  bindings: {
+    brand: '@',
+  },
   controller: class NavbarComponent {
     constructor() {
-      this.brand = 'AngularJS Vector Seed';
       this.logo = angularjsLogo;
     }
   },

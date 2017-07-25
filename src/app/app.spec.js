@@ -1,8 +1,11 @@
-// import app from './app';
+// import angular from 'angular';
+
+// import { app } from './app.module';
+// import { AppComponent } from './app.component';
 
 // describe('app', () => {
 
-//   describe('AppCtrl', () => {
+//   describe('AppComponent', () => {
 //     let ctrl;
 
 //     beforeEach(() => {
