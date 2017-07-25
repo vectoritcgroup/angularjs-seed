@@ -6,7 +6,10 @@
     {
       "taskName": "start",
       "command": "npm start",
-      "type": "shell"
+      "type": "shell",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
     }
   ]
 }
