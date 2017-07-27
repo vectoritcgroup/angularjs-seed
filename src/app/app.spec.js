@@ -1,23 +1,23 @@
-// import angular from 'angular';
+import angular from 'angular';
 
-// import { app } from './app.module';
-// import { AppComponent } from './app.component';
+import { appModule } from './app.module';
+import { AppComponent } from './app.component';
+import { AppService } from './app.service';
 
-// describe('app', () => {
+describe('AppComponent', () => {
+  let $componentController;
+  let appService;
 
-//   describe('AppComponent', () => {
-//     let ctrl;
+  beforeEach(() => angular.mock.module(appModule));
+  beforeEach(angular.mock.inject((_$componentController_) => {
+    $componentController = _$componentController_;
+  }));
+  beforeEach(angular.mock.inject([AppService.name, (_appService_) => {
+    appService = _appService_;
+  }]));
 
-//     beforeEach(() => {
-//       angular.mock.module(app);
-
-//       angular.mock.inject(($controller) => {
-//         ctrl = $controller('AppCtrl', {});
-//       });
-//     });
-
-//     it('should contain the starter url', () => {
-//       expect(ctrl.url).toBe('https://github.com/preboot/angular-webpack');
-//     });
-//   });
-// });
+  it('appName should be equal to app service value', () => {
+    const ctrl = $componentController(AppComponent.selector);
+    expect(ctrl.appName).toEqual(appService.name);
+  });
+});

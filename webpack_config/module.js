@@ -1,7 +1,6 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 import { env } from './env';
-import { paths } from '../paths';
 
 const scripts = {
   test: /\.js$/,

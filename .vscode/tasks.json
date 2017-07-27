@@ -10,6 +10,14 @@
       "problemMatcher": [
         "$eslint-stylish"
       ]
+    },
+    {
+      "taskName": "test",
+      "command": "npm test",
+      "type": "shell",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
     }
   ]
 }

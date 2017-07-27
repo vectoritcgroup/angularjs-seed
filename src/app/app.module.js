@@ -10,14 +10,14 @@ import { HomeComponent } from './home/home.component';
 import { appConfig } from './app.config';
 import { appStatesConfig } from './app.states';
 
-export const app = angular
+export const appModule = angular
   .module('app', [
     uiRouter,
   ])
   .config(appConfig)
   .config(appStatesConfig)
-  .service('AppService', AppService)
-  .component('app', AppComponent)
-  .component('appNavbar', NavbarComponent)
-  .component('appHome', HomeComponent)
+  .service(AppService.name, AppService)
+  .component(AppComponent.selector, AppComponent)
+  .component(NavbarComponent.selector, NavbarComponent)
+  .component(HomeComponent.selector, HomeComponent)
   .name;

@@ -4,6 +4,7 @@ import vectorLogo from './assets/vector-logo.jpg';
 import './home.component.scss';
 
 export const HomeComponent = {
+  selector: 'appHome',
   templateUrl,
   bindings: {
     header: '@',

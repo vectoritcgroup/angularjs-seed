@@ -1,9 +1,11 @@
+import { AppService } from './app.service';
+
 const homeState = {
   name: 'home',
   url: '/',
   component: 'appHome',
   resolve: {
-    header: /* @ngInject */ AppService => AppService.name,
+    header: [AppService.name, appService => appService.name],
   },
 };
 
